@@ -81,15 +81,17 @@ public class _00_일일과제 {
 		int[] bullet = {3,2};
 		
 		double cBullet = bullet[1]/bullet[0];
-		double bird1 = y[0]/x[0];
-		double bird2 = y[1]/x[1];
-		double bird3 = y[2]/x[2];
+		double bird0 = y[0]/x[0];
+		double bird1 = y[1]/x[1];
+		double bird2 = y[2]/x[2];
+		if(cBullet==bird0) {
+			System.out.println("0번 새");
+		}
 		if(cBullet==bird1) {
 			System.out.println("1번 새");
-		}else if(cBullet==bird2 ) {
-			System.out.println("2번 새");	
-		}else {
-			System.out.println("3번 새");
+		}
+		if(cBullet==bird2) {
+			System.out.println("2번 새");
 		}
 		
 		
