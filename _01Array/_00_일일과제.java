@@ -45,7 +45,7 @@ public class _00_일일과제 {
 		int pay = 10000;
 		int remain = pay-money;
 		int[] remainmoney = new int[3];
-		remainmoney[0] = (remain/10000)%1000;
+		remainmoney[0] = (remain/1000)%1000;
 		remainmoney[1] = (remain/1000)%100;
 		remainmoney[2] = (remain/100)%10;
 		System.out.println("천원: "+remainmoney[0]+ "개"+" 백원: "+remainmoney[1]+ "개"+" 십원: "+remainmoney[2]+"개");
