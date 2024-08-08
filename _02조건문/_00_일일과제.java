@@ -96,48 +96,32 @@ public class _00_일일과제 {
 		
 		
 		//문제9
-//		int[] enemy = {10, 20};
-//		int[] boom = {11, 5};
-//		int[] enemySize = {5,6};
-//		int[] boomSize = {2,2};
-//		
-//		int[] enemyBody = {enemy[0]+-enemySize[0], enemy[1]+-enemySize[1]};
-//		int[] boomBody = {boom[0]+-boomSize[0], boom[1]+-boomSize[1]};
-//		
-//		if(boomBody[1] > 10) {
-//			boomBody[1] += 1;
-//		}else if(boomBody[1] > 11) {
-//			boomBody[1] += 1;
-//		}else if(boomBody[1] > 12) {
-//			boomBody[1] += 1;
-//		}else if(boomBody[1] > 13) {
-//			boomBody[1] += 1;
-//		}else if(boomBody[1] > 14) {
-//			boomBody[1] += 1;
-//		}else if(boomBody[1] > 15) {
-//			boomBody[1] += 1;
-//		}
-//		if(boomBody==enemyBody) {
-//			System.out.println("Hit");
-//		}
+		int[] enemy = {10, 20};
+		int[] boom = {11, 5};
+		int[] enemySize = {5,6};
+		int[] boomSize = {2,2};
 		
-		int [] M = {11,5};
-		int [] E = {10,20};
-		int Xmi = E[0]-2;
-		int Xmx = E[0]+5;
-		int Ymi = E[1]-2;
-		int Ymx = E[1]+6;
-		String shot = "";
-		// E[0]-2<=M[0]<=E0+5  이고  E[1]-2<=M1<=E1+6
-	    // 최소 : 11,18 / 최대 : 11,26
-		if(Xmi<=M[0]&&M[0]<=Xmx) {
-			if(Ymi<=M[1]&&M[1]<=Ymx) {
-				shot = "hit하였습니다.";
-			}else {
-				shot = "hit하지 못하였습니다.";
-			}
+		int[] enemyBody = {enemy[0]+-enemySize[0], enemy[1]+-enemySize[1]};
+		int[] boomBody = {boom[0]+-boomSize[0], boom[1]+-boomSize[1]};
+		
+		if(boomBody[1] > 10) {
+			boomBody[1] += 1;
+		}else if(boomBody[1] > 11) {
+			boomBody[1] += 1;
+		}else if(boomBody[1] > 12) {
+			boomBody[1] += 1;
+		}else if(boomBody[1] > 13) {
+			boomBody[1] += 1;
+		}else if(boomBody[1] > 14) {
+			boomBody[1] += 1;
+		}else if(boomBody[1] > 15) {
+			boomBody[1] += 1;
 		}
-		System.out.println(shot);
+		if(boomBody==enemyBody) {
+			System.out.println("Hit");
+		}
+		
+		
 		
 		
 		
