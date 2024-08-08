@@ -25,41 +25,44 @@ public class _00_연습문제 {
 		}
 		
 		//50점 이상 점수를 모두 합하시오.
-		int score = 0;
+		int sum = 0;
 		for(int i = 0; i<5; i++) {
 			if(a[i] >= 50)
-			score+=a[i];
+			sum+=a[i];
 		}
-		System.out.println(score);
+		System.out.println(sum);
 		
 		//50점 이상의 값의 평균을 구하시오.
-		int svg = 0;
+		
 		int count = 0;
 		for(int i = 0; i<5; i++) {
 			if(a[i] >= 50) {
-				svg+=a[i];
+				sum+=a[i];
 				count++;
 			}
 				
 				
 		}
-		System.out.println((double)svg/count);
+		System.out.println((double)sum/count);
 		
 		
 		//최저점수를 뺀 나머지 값의 평균을 구하시오.
-		int num = 10000;
+		// 최저값 찾기
+		int minvalue = 10000;
 		for(int i = 0; i<5; i++) {
-			if(num>a[i]) {
-				num=a[i];
+			if(minvalue>a[i]) {
+				minvalue=a[i];
 			}
 		}
-		for(int i =0; i<5; i++) {
-			if(num!=a[i]) {
-				svg+=a[i];
+		// 누적 합 구하기
+		for(int i = 0; i<5; i++) {
+			if(minvalue!=a[i]) {
+				minvalue+=a[i];
 				count++;
 			}
 		}
-		System.out.println(((double)svg-num)/count);
+		// 평균 구하기
+		System.out.println(((double)sum-minvalue)/count);
 	}
 
 }
