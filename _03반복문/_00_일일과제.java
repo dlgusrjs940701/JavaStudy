@@ -98,11 +98,26 @@ public class _00_일일과제 {
 		System.out.println(fibSum);
 		
 		//문제9
-		for(int i = 1;i<20;i++) {
-			fibSum += i;
+		
+		int bInt = 0;
+		for(int i = 1; i<20;) {
+			System.out.println(i);
+			int temp=i;  // 현재 i값 백업
+			i=bInt+i;   // 다음 i값
+			bInt=temp;   // 이전 bInt에 현재 i값 저장
 		}
-		System.out.println(fibSum);
+		
 		
 		//문제10
+		int aaa=987654321;
+		int sum=0;
+		for( ;aaa>0;) {
+			sum+=(sum%10);
+			aaa/=10;
+			aaa=aaa/10;
+//			sum=sum+aaa%10;
+//			aaa=aaa/10;
+		}
+		System.out.println(sum);
 	}
 }
