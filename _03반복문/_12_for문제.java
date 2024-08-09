@@ -15,11 +15,11 @@ public class _12_for문제 {
 			if(arr[i]==num) {
 				maxLength++;
 				length++;
-				maxNum=num;
+				maxNum=arr[i];
 			}else {
 				if(length>maxLength) {
-					maxLength=length;
-					maxNum=arr[i];
+					maxLength=0;
+					maxNum=0;
 				}
 			}
 		}
