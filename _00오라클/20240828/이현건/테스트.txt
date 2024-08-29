@@ -1,0 +1,40 @@
+쿼리문 테스트
+Client
+
+insert into Client values('dlgusrjs', 'sklfk122', '정이신', '010-1111-2222', 30, 1000, 'Y');
+insert into Client values('wjdwldyd', '45657', '김지균', '010-2222-3535', 20, 50, 'N');
+insert into Client values('dlaudrbs', 'ajskljf', '이태용', '010-3333-2785', 45, 600, 'N');
+insert into Client values('tlsxogjs', 'djkslj44', '신정건', '010-4444-4518', 78, 1456, 'N');
+insert into Client values('rlaxogks', 'sjkgljn1', '이태환', '010-5555-4563', 18, 45677, 'Y');
+insert into Client values('jim','1234','짐캐리','010-7364-4856',22,'Y');
+insert into Client values('mino','9999','송민호','010-9461-5533',30,'Y');
+insert into Client values('paek','0410','백종원','010-8374-2027',45,'N');
+insert into Client values('isabel','5959','이사벨','010-4679-5966',17,'Y');
+insert into Client values('ddong','5678','홍길동','010-4321-6789',62,'N');
+
+
+Station
+insert into station values('s01','서울역');
+insert into station values('s02','부산역');
+insert into station values('s03','대전역');
+insert into station values('s04','대구역');
+insert into station values('s05','용산역');
+insert into station values('s06','여수역');
+insert into station values('s07','광주역');
+insert into station values('s08','천안역');
+insert into station values('s09','목포역');
+insert into station values('s10','울산역');
+
+스케줄
+insert into Schedule values('s35', '2024-09-14 16:15:00', 's01', 's04', 'S11');
+insert into Schedule values('s99', '2024-09-14 11:12:00', 's05', 's04', 'K03');
+insert into Schedule values('s89', '2024-09-18 15:32:00', 's04', 's09', 'I24');
+insert into Schedule values('s64', '2024-09-16 19:48:00', 's08', 's03', 'M36');
+insert into Schedule values('s58', '2024-09-17 21:07:00', 's02', 's05', 'K01');
+
+예약
+insert into Reservation values('r04', '2024-08-30 09:14:05', 'mino', 's58');
+insert into Reservation values('r13', '2024-08-29 15:25:17', 'paek', 's64');
+insert into Reservation values('r11', '2024-08-29 07:15:55', 'isabel', 's89');
+insert into Reservation values('r08', '2024-08-31 21:46:32', 'ddong', 's99');
+insert into Reservation values('r01', '2024-08-30 17:01:09', 'jim', 's35');

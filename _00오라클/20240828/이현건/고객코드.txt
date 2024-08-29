@@ -1,0 +1,8 @@
+쿼리문 테스트
+Client
+
+insert into Client values('dlgusrjs', 'sklfk122', '정이신', '010-1111-2222', 30, 1000, 'Y');
+insert into Client values('wjdwldyd', '45657', '김지균', '010-2222-3535', 20, 50, 'N');
+insert into Client values('dlaudrbs', 'ajskljf', '이태용', '010-3333-2785', 45, 600, 'N');
+insert into Client values('tlsxogjs', 'djkslj44', '신정건', '010-4444-4518', 78, 1456, 'N');
+insert into Client values('rlaxogks', 'sjkgljn1', '이태환', '010-5555-4563', 18, 45677, 'Y');

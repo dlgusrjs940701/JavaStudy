@@ -1,0 +1,61 @@
+오라클 2일차
+
+CRUD
+1. C : row insert
+2. R : row select - 중복일 경우 문제발생
+3. U : row update - 중복일 경우 문제발생
+4. D : row delete - 중복일 경우 문제발생
+
+게시판 
+1. 글쓰기 - C
+2. 글수정 - U
+3. 글삭제 - D
+4. 검색 - R
+5. 전체보기 - R
+6. 좋아요 누르기 - C
+7. 추천하기 - C
+
+-----------------------------
+DB 
+정형 vs 비정형
+정형은 형식이 있는데 ex) 테이블 형태 - 행과 열
+                          row  column
+  		 (CRUD) (속성, 제약조건)
+		  키 : 컬럼에 부여하는 기능
+
+기본키(primary key) : 튜플(row)을 유일하게 식별, 기본키로 index(색인)를 형성하여 저장. null 불가
+  					ㄴ 검색속도가 향상	
+	member
+	이름	주소	전화번호
+	홍길동	서울	1111
+	일지매 	서울	1111
+	홍길동	수원	2222
+	
+	위 테이블은 row를 유일하게 식별하지 못해서 갱신 이상현상이 발생할 수 있다
+				                    삭제                 "
+
+외래키 : 테이블을 분리하고 단서를 남기기 위해..  
+           컬럼 to 컬럼 관계다.
+
+----------------------------------------------------
+
+member table
+id : 8글자, 기본키
+name : 한글5글자,
+tel : 13글자
+
+car table
+carnnum : 4글자
+id : 8글자, 외래키(참조하는 정보 - member릴레이션의 id컬럼)
+
+create table member table(
+2. id varchar2(8) primary key
+3. name varchar2(10)
+4. tel varchar2(13)
+);
+
+create table car table(
+2. carnum number(4)
+3. id varchar2(8)
+constraint test_FK foreign key(id) references member table(id)
+);

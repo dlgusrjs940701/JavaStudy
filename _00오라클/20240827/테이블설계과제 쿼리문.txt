@@ -1,0 +1,31 @@
+1. 테이블 만들기
+create member(
+id varchar2(8) ,
+name varchar2(30),
+tel varchar2(13),
+primary key(id)
+);
+create table car(
+carnum varchar2(4),
+id varchar2(8),
+constraint fk_member_id foreign key(id) 
+references member(id)
+);
+
+
+2. 쿼리문으로 테스트 하기
+다음 쿼리문이 실행이 가능한지 오류인지 수기로 확인하세요.
+insert into membertable values ('a','hong','0102222'); 
+insert into membertable values ('b','lee','0102222');
+insert into membertable values ('c','park','0103333');
+insert into cartable values ('6767','a');
+insert into cartable values ('7777','a');
+insert into cartable values ('8888','d');
+select * from membertable;
+select * from cartable;
+select id, name membertable where id='a';
+delete from membertable where id='a';
+delete from membertable where id='c';
+update from membertable set id='c' where id='a';
+update from membertable set id='d' where id='c';
+update from membertable set name='choi' where id='a';

@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="미니프로젝트_ERD" id="D93C6908-F89F-98FD-FC49-AC6C958C0729" version="3.5">
-<createdBy>human-18</createdBy>
-<createdTime>2024-08-29 02:51:20 UTC</createdTime>
-<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>D93C6908-F89F-98FD-FC49-AC6C958C0729</designId>
-</OSDM_Design>

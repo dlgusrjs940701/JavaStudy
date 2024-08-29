@@ -1,0 +1,6 @@
+select a.sch_id, substr(a.sch_time,1, 8) as time,
+substr((select st_name from Station where st_id=a.s_st),1,6) as s_starion, 
+substr((select st_name from Station where st_id=a.e_st),1,6) as e_starion, c.tr_name, c.tr_type
+from Schedule a, Train c
+where a.tr_id = c.tr_id
+order by sch_id;
