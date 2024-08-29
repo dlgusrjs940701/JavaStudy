@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="TRAIN" directorySegmentName="seg_0" id="D298DCA9-40A2-8DDE-E161-E8E72242D850">
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<schemaObject>73FBA5ED-CBEF-585D-A585-B2545C6E306B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2DBA60FF-0197-D548-8D19-4B14AB80B2CE</segment>
+<tableSpace>30919BC2-CFDF-109E-D2C5-7545C17E8594</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TR_NAME" id="1B2B482C-5794-BD6E-4DF9-A6B17E84835D">
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TR_TYPE" id="4425D9B6-6A80-5240-586A-46EDEFA756AB">
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TR_ID" id="9CE2CB72-ACDA-A728-5BB1-4C0B4E43C91F">
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TRAIN_PK" id="2213585F-B76D-5257-37E9-2CEE832BEE16">
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<schemaObject>73FBA5ED-CBEF-585D-A585-B2545C6E306B</schemaObject>
+<segment>12D36404-5F9D-3D19-2E93-6EEA97A50F11</segment>
+<tableSpace>30919BC2-CFDF-109E-D2C5-7545C17E8594</tableSpace>
+<indexSegment>12D36404-5F9D-3D19-2E93-6EEA97A50F11</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

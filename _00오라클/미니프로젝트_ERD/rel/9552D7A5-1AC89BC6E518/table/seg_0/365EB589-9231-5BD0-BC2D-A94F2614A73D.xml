@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="365EB589-9231-5BD0-BC2D-A94F2614A73D" schemaObject="73FBA5ED-CBEF-585D-A585-B2545C6E306B" name="SCHEDULE">
+<sourceConnName>orcl</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SCHEDULE</sourceObjName>
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SCH_ID" id="958AB292-2C8E-C0B8-4DA8-19881D98AF4F">
+<sourceConnName>orcl</sourceConnName>
+<sourceObjSchema>SCHEDULE</sourceObjSchema>
+<sourceObjName>SCH_ID</sourceObjName>
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SCH_TIME" id="0EF4D894-29E6-97EB-B7BD-5AEBE330F381">
+<sourceConnName>orcl</sourceConnName>
+<sourceObjSchema>SCHEDULE</sourceObjSchema>
+<sourceObjName>SCH_TIME</sourceObjName>
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="S_ST" id="D95F4907-A120-5AC0-90C6-3AE3D0B1FD90">
+<sourceConnName>orcl</sourceConnName>
+<sourceObjSchema>SCHEDULE</sourceObjSchema>
+<sourceObjName>S_ST</sourceObjName>
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C97B25D-E492-B2AB-7F8C-B2169C88AAB1" referredColumn="1B977D41-5E0F-6C2D-D085-0584BEBFAB03"/>
+</associations>
+</Column>
+<Column name="E_ST" id="14205E73-D1C8-9673-7C52-A0589E6FDCE1">
+<sourceConnName>orcl</sourceConnName>
+<sourceObjSchema>SCHEDULE</sourceObjSchema>
+<sourceObjName>E_ST</sourceObjName>
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4C027D93-6D42-E4AB-E504-F5D46EA70DD7" referredColumn="1B977D41-5E0F-6C2D-D085-0584BEBFAB03"/>
+</associations>
+</Column>
+<Column name="TR_ID" id="31CC45A3-FCBF-27E1-468E-8456A06C4D0A">
+<sourceConnName>orcl</sourceConnName>
+<sourceObjSchema>SCHEDULE</sourceObjSchema>
+<sourceObjName>TR_ID</sourceObjName>
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D7E3FB2-C553-06E0-48F4-24250363E39B" referredColumn="9CE2CB72-ACDA-A728-5BB1-4C0B4E43C91F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F12463AD-B50A-6775-4249-1D7E7AE37C00" schemaObject="73FBA5ED-CBEF-585D-A585-B2545C6E306B" name="SCHEDULE_PK">
+<sourceConnName>orcl</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C0011115</sourceObjName>
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="958AB292-2C8E-C0B8-4DA8-19881D98AF4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="74337727-2344-3531-142B-712AA4BB484B" name="SCH_FK1">
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D95F4907-A120-5AC0-90C6-3AE3D0B1FD90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25333DAE-CDED-92F0-3472-D667B4242654" name="SCH_FK2">
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14205E73-D1C8-9673-7C52-A0589E6FDCE1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CEEE5074-29F0-A9B3-449A-5EF19E1D0291" name="SCH_FK3">
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31CC45A3-FCBF-27E1-468E-8456A06C4D0A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

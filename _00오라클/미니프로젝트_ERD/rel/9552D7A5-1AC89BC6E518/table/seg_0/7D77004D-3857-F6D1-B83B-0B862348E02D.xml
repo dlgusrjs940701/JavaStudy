@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7D77004D-3857-F6D1-B83B-0B862348E02D" schemaObject="73FBA5ED-CBEF-585D-A585-B2545C6E306B" name="RESERVATION">
+<sourceConnName>orcl</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>RESERVATION</sourceObjName>
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RES_ID" id="8E70A45C-7DA5-5818-0BBB-517DEB714D45">
+<sourceConnName>orcl</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>RES_ID</sourceObjName>
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RES_TIME" id="63B71C1E-ECDE-0037-CC7D-8C6047C0BB86">
+<sourceConnName>orcl</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>RES_TIME</sourceObjName>
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USER_ID" id="65DE1D5C-3ADD-3786-AE10-B4BB584F0ED0">
+<sourceConnName>orcl</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>USER_ID</sourceObjName>
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EBEC3F63-6EE8-FF5B-14C3-E4DE3D010DA0" referredColumn="63066964-81FA-5FF0-6F1B-B6C5D5D55211"/>
+</associations>
+</Column>
+<Column name="SCH_ID" id="7860F0EF-090C-A40F-DABE-2BC178873073">
+<sourceConnName>orcl</sourceConnName>
+<sourceObjSchema>RESERVATION</sourceObjSchema>
+<sourceObjName>SCH_ID</sourceObjName>
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9D632988-EAEB-6FAE-C028-BC232BC68014" referredColumn="958AB292-2C8E-C0B8-4DA8-19881D98AF4F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2DEAB38E-F62A-545D-CE36-F2CF4CDCD94E" schemaObject="73FBA5ED-CBEF-585D-A585-B2545C6E306B" name="RESERVATION_PK">
+<sourceConnName>orcl</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C0011119</sourceObjName>
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E70A45C-7DA5-5818-0BBB-517DEB714D45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6BC86438-E4DA-A59E-837B-C8CCC5986769" name="RES_FK1">
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65DE1D5C-3ADD-3786-AE10-B4BB584F0ED0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D9545C96-E0DE-8343-4832-84F32A9CC6DE" name="RES_FK2">
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7860F0EF-090C-A40F-DABE-2BC178873073"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

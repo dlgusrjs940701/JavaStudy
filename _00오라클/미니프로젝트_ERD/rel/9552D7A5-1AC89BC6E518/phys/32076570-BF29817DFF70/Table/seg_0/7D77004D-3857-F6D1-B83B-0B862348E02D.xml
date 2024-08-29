@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="RESERVATION" directorySegmentName="seg_0" id="7D77004D-3857-F6D1-B83B-0B862348E02D">
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<schemaObject>73FBA5ED-CBEF-585D-A585-B2545C6E306B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2DBA60FF-0197-D548-8D19-4B14AB80B2CE</segment>
+<tableSpace>30919BC2-CFDF-109E-D2C5-7545C17E8594</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="RES_TIME" id="63B71C1E-ECDE-0037-CC7D-8C6047C0BB86">
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USER_ID" id="65DE1D5C-3ADD-3786-AE10-B4BB584F0ED0">
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SCH_ID" id="7860F0EF-090C-A40F-DABE-2BC178873073">
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RES_ID" id="8E70A45C-7DA5-5818-0BBB-517DEB714D45">
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="RES_FK1" id="6BC86438-E4DA-A59E-837B-C8CCC5986769">
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="RES_FK2" id="D9545C96-E0DE-8343-4832-84F32A9CC6DE">
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="RESERVATION_PK" id="2DEAB38E-F62A-545D-CE36-F2CF4CDCD94E">
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<schemaObject>73FBA5ED-CBEF-585D-A585-B2545C6E306B</schemaObject>
+<segment>12D36404-5F9D-3D19-2E93-6EEA97A50F11</segment>
+<tableSpace>30919BC2-CFDF-109E-D2C5-7545C17E8594</tableSpace>
+<indexSegment>12D36404-5F9D-3D19-2E93-6EEA97A50F11</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0FA35662-E2EB-5230-D05D-C74FFCC1D70A" schemaObject="73FBA5ED-CBEF-585D-A585-B2545C6E306B" name="STATION">
+<sourceConnName>orcl</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>STATION</sourceObjName>
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:53 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ST_ID" id="1B977D41-5E0F-6C2D-D085-0584BEBFAB03">
+<sourceConnName>orcl</sourceConnName>
+<sourceObjSchema>STATION</sourceObjSchema>
+<sourceObjName>ST_ID</sourceObjName>
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_NAME" id="2C849B90-71AE-1B27-E118-FCCE9856E46E">
+<sourceConnName>orcl</sourceConnName>
+<sourceObjSchema>STATION</sourceObjSchema>
+<sourceObjName>ST_NAME</sourceObjName>
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D4E81D54-7504-2207-19A4-5F29022577AE" schemaObject="73FBA5ED-CBEF-585D-A585-B2545C6E306B" name="STATION_PK">
+<sourceConnName>orcl</sourceConnName>
+<sourceObjSchema>SYSTEM</sourceObjSchema>
+<sourceObjName>SYS_C0011113</sourceObjName>
+<createdBy>human-18</createdBy>
+<createdTime>2024-08-29 02:51:54 UTC</createdTime>
+<ownerDesignName>미니프로젝트_ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B977D41-5E0F-6C2D-D085-0584BEBFAB03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
