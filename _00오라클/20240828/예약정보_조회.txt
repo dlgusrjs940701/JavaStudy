@@ -1,5 +1,5 @@
 select substr(a.res_id,1,4) as 코드, substr(a.res_time,1, 8) as 예약신청시간, b.user_name as 예약자, substr(c.sch_time,1, 8) as 출발일 
 from reservation a, Client b, Schedule c
 where a.user_id = b.user_id
-and a.sch_id = c.sch_id
+and a.sch_id = c.sch_id;
 order by a.res_id;

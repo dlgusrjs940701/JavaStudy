@@ -1,6 +1,11 @@
-select a.sch_id, substr(a.sch_time,1, 8) as time,
-substr((select st_name from Station where st_id=a.s_st),1,6) as s_starion, 
-substr((select st_name from Station where st_id=a.e_st),1,6) as e_starion, c.tr_name, c.tr_type
+select a.sch_id as 코드, substr(a.sch_time,1, 8) as 예약 신청 시간,
+substr((select st_name from Station where st_id=a.s_st),1,6) as 출발역, 
+substr((select st_name from Station where st_id=a.e_st),1,6) as 도착역, c.tr_name, c.tr_type
 from Schedule a, Train c
 where a.tr_id = c.tr_id
-order by sch_id;
+order by a.sch_id;
+
+
+update schedule set sch_time='24/12/25' where substr(sch_time,1,5)='24/10'; 
+
+update schedule as of timestamp(systimestamp+interval '2' hour) where substr(sch_time,1,5)='24/10';
