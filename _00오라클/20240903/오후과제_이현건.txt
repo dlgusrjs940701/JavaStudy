@@ -31,25 +31,49 @@ insert into muser values(muser_no.nextval,'770405-1','이천안',1,10000,31);
 
 
 1 grade가 3인 사람은 모두 몇명인가요?
-select count(*) 인원수 from muser where grade=3;
+select count(*) 인원수 
+from muser 
+where grade=3;
 
 2 grade가 1,2,4인 사람들의 salary의 평균을 구하시오.
-select avg(salary) 평균 from muser where grade in(1,2,4);
+select avg(salary) 평균 
+from muser 
+where grade in(1,2,4);
 
 3 salary가 20000 미만인 사람은 총 몇명입니까?
-select count(*) 인원수 from muser where salary<20000;
+select count(*) 인원수
+from muser 
+where salary<20000;
 
 4 salary가 30000 이상인 사람의 salary 평균을 구하시오.
-select avg(salary) 평균 from muser where salary>=30000;
+select avg(salary) 평균 
+from muser 
+where salary>=30000;
 
 5 77년생중에  salary가 가장 적은 사람의 이름과 나이와 salary를 출력하시오.
-select name 이름, reg_num 생년월일, salary 급여
+select name 이름,
+(extract(year from sysdate))-(decode(substr(reg_num,8),'1',1900,'2',1900,2000)+substr(reg_num,1,2)) 나이, 
+salary 급여
 from muser 
-where salary = (select min(salary) from muser where substr(reg_num,0,2)=77)
+where salary = (
+	select min(salary) 
+	from muser 
+	where substr(reg_num,0,2)=77)
 and substr(reg_num,1,2)=77;
+-------------------------------------------
+(extract(year from sysdate)) - 오늘의 날짜에서 year을 가져온다.
+나이 구하기
+select substr(reg_num,8) a,
+decode(substr(reg_num,8),'1',1900,'2',1900,2000) b,
+decode(substr(reg_num,8),'1',1900,'2',1900,2000)+substr(reg_num,1,2) c
+from muser;
+
+select 2024-(decode(substr(reg_num,8),'1',1900,'2',1900,2000)+substr(reg_num,1,2))
+from muser;
 
 6 모든 사람의 이름과, 생일(월과 일 예를들어 0205)를 출력하시오.
-select name, substr(reg_num,1,4) from muser;
+select name 이름, substr(reg_num,1,4) 
+from muser;
 
 7 남자의 평균 급여를 구하시오.
 select avg(salary) 평균
@@ -60,20 +84,27 @@ or substr(reg_num,8,1)='3';
 8 전체 평균급여보다 높은 급여를 받는 사람의 이름과, 급여를 출력하시오
 select name 이름, salary 급여
 from muser
-where salary>(select avg(salary) from muser);
+where salary>(
+	select avg(salary) 
+	from muser);
 
 9 전체 평균급여보다 높은 급여를 받는 사람의 이름과, 급여, 평균급여를 출력하시오
-select name 이름, salary 급여, (select avg(salary) from muser) 평균급여 
+select name 이름, salary 급여, (select avg(salary) 
+from muser) 평균급여 
 from muser 
-where salary>(select avg(salary) from muser);
+where salary>(
+	select avg(salary) 
+	from muser);
 
 10 여직원의 평균급여보다 높은 남자직원은 모두 몇명입니까
 select count(*) 인원수
 from muser
-where substr(reg_num,8)='1'
-or substr(reg_num,8)='3'
-and salary > (select avg(salary) from muser where substr(reg_num,8)='2'
-or substr(reg_num,8)='4');
+where substr(reg_num,8) in (1,3)
+and salary > (
+	select avg(salary) 
+	from muser 
+	where substr(reg_num,8) in (2,4));
+	
 
 11 grade별 평균 급여를 출력하세요..
 select grade 학년, avg(salary) 평균급여
@@ -84,7 +115,9 @@ group by grade;
 select grade 학년, avg(salary) 평균급여
 from muser
 group by grade
-having avg(salary)>(select avg(salary) from muser)
+having avg(salary)>(
+	select avg(salary) 
+	from muser)
 order by grade;
 
 13 직원들의 월급 명세서를 출력하시오. (출력 형태는 이름, 월급(grade*salary*time)
@@ -93,11 +126,13 @@ from muser;
 
 14 직원들의 성별을 출력하시오. (출력 형태 이름, 성별(성별은 남또는 여로 출력한다)
 select name 이름,
-case when substr(reg_num,8)='1' then '남'
-when substr(reg_num,8)='3' then '남'
+case when substr(reg_num,8) in (1,3) then '남'
 else '여'
 end 성별
 from muser;
+
+decode로 대체 가능
+
 
 15 time은 근무시간이 근무시간이 31이상인 사람의 이름을 출력하시오.
 select name 이름
@@ -166,6 +201,6 @@ select distinct time 연령, max(salary) over(partition by time) 최고급여 fr
 -months_between 두 날짜의 개월 수 차이
 -to_char 날짜 데이터를 문자 데이터로 변환, to_date 문자 데이터를 날짜 데이터로
 -case when then select문에서 조건을 넣기 편함
--distinct 중복 제거
+-distinct 중복 제거 , select절에서 한번만 사용이 가능, 중복제거 범위는  select에서 지정한 전체 행의 중복이다.
 -분석함수() over(partition by 컬럼) 그룹바이나 서브쿼리를 사용하지 않고 분석함수와 집계함수를 사용할 수 있어 쿼리 길이를 줄일 수 있음
 
