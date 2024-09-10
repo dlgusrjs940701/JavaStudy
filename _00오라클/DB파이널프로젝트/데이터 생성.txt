@@ -1,0 +1,132 @@
+고객
+현건)
+insert into Client values('enjfn', 'sklfk122', '정이신', 30, '010-1111-2222');
+insert into Client values('wjdwldyd', '45657', '김지균', 20, '010-2222-3535');
+insert into Client values('dlaudrbs', 'ajskljf', '이태용', 45, '010-3333-2785');
+insert into Client values('tlsxogjs', 'djkslj44', '신정건', 78, '010-4444-4518');
+insert into Client values('rlaxogks', 'sjkgljn1', '이태환', 18, '010-5555-4563');
+지용)
+insert into client values('amanda','manda123','아만다',44,'010-2293-5868');
+insert into client values('jiyong','1111','정지용',27,'010-8740-5966');
+insert into client values('Brad','1963','브래드피트',61,'010-9433-5732');
+insert into client values('taeha','tae9999','태하',4,'010-3239-6679');
+insert into client values('presi','dent2024','윤석열',63,'010-2217-4782');
+
+승헌)
+insert into client values('rkdghehd','11111','강호동',40,'010-1111-1111');
+insert into client values('dbwotjr','22222','유재석',50,'010-2222-2222');
+insert into client values('qkrskfo','33333','박나래',19,'010-3333-3333');
+insert into client values('anstpdbs','44444','문세윤',45,'010-4444-4444');
+insert into client values('dbauddls','55555','유명인',30,'010-5555-5555');
+
+기차
+현건)
+insert into Train values('K01','KTX-T001','KTX');
+insert into Train values('K02','KTX-T002','KTX');
+insert into Train values('K03','KTX-T003','KTX');
+insert into Train values('K04','KTX-T004','KTX');
+insert into Train values('S11','SRT-T011','SRT');
+insert into Train values('S12','SRT-T012','SRT');
+insert into Train values('S13','SRT-T013','SRT');
+insert into Train values('S14','SRT-T014','SRT');
+insert into Train values('S15','SRT-T015','SRT');
+insert into Train values('I23','ITX-T023','ITX');
+insert into Train values('I24','ITX-T024','ITX');
+insert into Train values('I25','ITX-T025','ITX');
+insert into Train values('I26','ITX-T026','ITX');
+insert into Train values('I27','ITX-T027','ITX');
+insert into Train values('I28','ITX-T028','ITX');
+insert into Train values('M32','새마을호-T032','새마을');
+insert into Train values('M33','새마을호-T033','새마을');
+insert into Train values('M34','새마을호-T034','새마을');
+insert into Train values('M35','새마을호-T035','새마을');
+insert into Train values('M36','새마을호-T036','새마을');
+insert into Train values('M37','새마을호-T037','새마을');
+insert into Train values('I45','ITX-청춘05','ITX-청춘');
+insert into Train values('I46','ITX-청춘06','ITX-청춘');
+insert into Train values('I47','ITX-청춘07','ITX-청춘');
+insert into Train values('I48','ITX-청춘08','ITX-청춘');
+insert into Train values('I49','ITX-청춘09','ITX-청춘');
+insert into Train values('N56','누리호-T088','누리호');
+insert into Train values('N57','누리호-T089','누리호');
+insert into Train values('N58','누리호-T090','누리호');
+insert into Train values('N59','누리호-T091','누리호');
+insert into Train values('N60','누리호-T092','누리호');
+
+역
+지용)
+insert into station values('s01','서울역',1);
+insert into station values('s02','부산역',2);
+insert into station values('s03','인천역',3);
+insert into station values('s04','대구역',4);
+insert into station values('s05','광주역',5);
+insert into station values('s06','대전역',6);
+insert into station values('s07','수원역',7);
+insert into station values('s08','전주역',8);
+insert into station values('s09','창원역',9);
+insert into station values('s10','경주역',10);
+insert into station values('s11','속초역',11);
+insert into station values('s12','청주역',12);
+insert into station values('s13','제주역',13);
+insert into station values('s14','용산역',14);
+insert into station values('s15','강릉역',15);
+insert into station values('s16','원주역',16);
+insert into station values('s17','울산역',17);
+insert into station values('s18','평택역',18);
+insert into station values('s19','아산역',19);
+insert into station values('s20','익산역',20);
+
+좌석
+승헌)
+insert into seat values('C0','일반석');
+insert into seat values('C1','일반석');
+insert into seat values('C2','일반석');
+insert into seat values('C3','일반석');
+insert into seat values('C4','일반석');
+insert into seat values('C5','일반석');
+insert into seat values('C6','일반석');
+insert into seat values('C7','일반석');
+insert into seat values('C8','일반석');
+insert into seat values('C9','일반석');
+insert into seat values('V0','우등석');
+insert into seat values('V1','우등석');
+insert into seat values('V2','우등석');
+insert into seat values('V3','우등석');
+insert into seat values('V4','우등석');
+insert into seat values('V5','우등석');
+insert into seat values('V6','우등석');
+insert into seat values('V7','우등석');
+insert into seat values('V8','우등석');
+insert into seat values('V9','우등석');
+
+시간표
+지용, 현건)
+insert into schedule values('s21','2024-09-12 08:34:00','s07','s17','M32',50000);
+insert into schedule values('s22','2024-09-14 18:56:00','s01','s18','I46',85000);
+insert into schedule values('s23','2024-09-13 11:05:00','s11','s15','N56',20000);
+insert into schedule values('s24','2024-09-15 14:15:00','s19','s03','N60',80000);
+insert into schedule values('s25','2024-09-13 15:52:00','s02','s14','K01',60000);
+insert into schedule values('e07','2024-09-06 08:00:00','s08','s05','N60',15000);
+insert into schedule values('e16','2024-09-10 09:30:00','s01','s09','I27',40000);
+insert into schedule values('e22','2024-09-21 08:00:00','s03','s15','K01',60000);
+insert into schedule values('e23','2024-09-21 08:00:00','s03','s15','K02',60000);
+insert into schedule values('e24','2024-09-21 19:00:00','s15','s03','K03',60000);
+insert into schedule values('e35','2024-09-22 10:00:00','s10','s17','S11',35000);
+insert into schedule values('e36','2024-09-22 10:00:00','s11','s14','S12',15000);
+insert into schedule values('e37','2024-09-22 20:00:00','s14','s11','S11',15000);
+insert into schedule values('e38','2024-09-22 20:00:00','s17','s10','S12',35000);
+insert into schedule values('e40','2024-09-30 10:30:00','s06','s16','M34',50000);
+
+
+예약
+
+게시판
+현건)
+insert into notice values('n99', '010-1111-2222', '에어컨 건의사항', '에어컨이 너무 세요', now(), 0000);
+insert into notice values('n98', '010-4444-4518', '정수기 건의사항', '정수기 종이컵이 안채워져있어요', now(), 0001); 
+insert into notice values('n97', '010-3333-2785', '주차장 건의사항', '주차장 스티커 좀 주세요', now(), 1526); 
+insert into notice values('n96', '010-2222-3535', '주차장 건의사항', '주차장 스티커 좀 주세요', now(), 2324);
+insert into notice values('n95', '010-5555-4563', '에어컨 건의사항', '에어컨 성능 좋네요', now(), 4561);
+
+댓글
+

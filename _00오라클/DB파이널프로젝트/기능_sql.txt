@@ -1,0 +1,17 @@
+예약 현황 조회
+select a.user_name as "예약자", d.res_time as "예약시간",
+(select st_name from station where st_id = c.s_st) as "출발역",
+(select st_name from station where st_id = c.e_st) as "도착역",
+c.sch_time as "출발시간", b.tr_name as "기차정보"
+from client a, train b, schedule c, reservation d
+where d.user_tel = a.user_tel 
+and c.sch_id = d.sch_id
+and c.tr_id = b.tr_id
+order by "예약시간";
+
+
+특정 시간표 조회
+select s_st, sch_time
+from schedule
+where to_char(sch_time, 'YYYYMMDD')='20240922'
+and s_st='s14';  // s14 -> 용산역;
