@@ -8,7 +8,6 @@ public class _05_일일과제 {
 				{ 21, 22, 23, 24, 25 } };
 		
 //		Q5)전체 배열의 값 중 홀수를 0으로 마스킹하고, 마스킹 된 결과 2차원 배열을 출력하시오.
-		
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[i].length; j++) {
 				if (a[i][j] % 2 == 1) {
@@ -19,6 +18,7 @@ public class _05_일일과제 {
 			}
 			System.out.println();
 		}
+//		2차원배열의 값을 2로 나눠 홀수면 "0"이 출력
 	}
 
 }

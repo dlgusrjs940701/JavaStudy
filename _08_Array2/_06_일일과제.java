@@ -14,6 +14,7 @@ public class _06_일일과제 {
 			}
 			System.out.println();
 		}
+//		내림차순이라 i와 j가 거꾸로 2차원배열 a의 뒤에부터 거꾸로 
 	}
 
 }

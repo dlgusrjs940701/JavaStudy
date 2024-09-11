@@ -8,7 +8,6 @@ public class _04_일일과제 {
 				{ 21, 22, 23, 24, 25 } };
 		
 //		Q4)전체배열의 값 중 짝수는 모두 몇개인가?
-		
 		int cnt = 0;
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[i].length; j++) {
@@ -17,7 +16,8 @@ public class _04_일일과제 {
 				}
 			}
 		}
-		System.out.println(cnt);
+		System.out.println(cnt);		
+//		카운트 함수를 만들어 놓고 2차원배열의 값을 2로 나눠서 짝수면 카운트에 추가
 	}
 
 }
