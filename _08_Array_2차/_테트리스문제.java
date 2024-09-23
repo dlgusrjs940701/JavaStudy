@@ -17,5 +17,4 @@ public class _테트리스문제 {
 			System.out.println();
 		}
 	}
-
 }
