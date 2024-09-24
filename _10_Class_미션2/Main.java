@@ -3,10 +3,10 @@ package _10_Class_미션2;
 import java.util.Scanner;
 
 public class Main {
-	Customer_a ca = new Customer_a();
-	Event_a ea = new Event_a();
-	
+
 	public static void main(String[] args) {
+		Customer_a ca = new Customer_a();
+		Event_a ea = new Event_a();
 		// TODO Auto-generated method stub
 		System.out.println("-----고객 및 이벤트 관리 프로그램-----");
 		Scanner in = new Scanner(System.in);
@@ -23,13 +23,12 @@ public class Main {
 			System.out.println(selNum + " 번을 선택하셨습니다");
 			System.out.println();
 			if (selNum == 1) {
-				new Customer_a();
+				ca.Customer_a();
 			} else if (selNum == 2) {
-				new Event_a();
+				ea.Event_a();
 			} else {
 				break;
 			}
 		}
 	}
-
 }

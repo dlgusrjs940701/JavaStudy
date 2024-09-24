@@ -7,7 +7,7 @@ public class Customer_a {
 	Customer_info[] cList = new Customer_info[10];
 	Scanner in = new Scanner(System.in);
 
-	Customer_a() {
+	public void Customer_a() {
 		while (true) {
 			System.out.println();
 			System.out.println("------고객관리 프로그램------");

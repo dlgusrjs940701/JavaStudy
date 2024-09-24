@@ -6,7 +6,7 @@ public class Event_a {
 	Event[] eventList = new Event[10];
 	Scanner in = new Scanner(System.in);
 
-	Event_a() {
+	public void Event_a() {
 		while (true) {
 			System.out.println("--------이벤트--------");
 			System.out.println();

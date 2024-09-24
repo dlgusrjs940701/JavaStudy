@@ -5,12 +5,8 @@ public class Customer_info {
 	String cId = null;
 	String cName = null;
 
-	public void setcId(String id) {
-		cId = id;
-	}
+	public void Customer_a() {
 
-	public void setcName(String name) {
-		cName = name;
 	}
 
 	public void prt() {
