@@ -7,6 +7,7 @@ public class jobMain {
 
 	ArrayList<job_Manage> memberList = new ArrayList<>();
 	ArrayList<employMent_Manage> employList = new ArrayList<>();
+	
 
 	jobMain() {
 
@@ -125,6 +126,7 @@ public class jobMain {
 					String mName = S.nextLine();
 					boolean name = checkName(mName);
 					if (name == true) {
+						System.out.println("변경되었습니다.");
 						memberTemp.mId=mId;
 						memberTemp.mName=mName;
 						memberList.remove(i);
