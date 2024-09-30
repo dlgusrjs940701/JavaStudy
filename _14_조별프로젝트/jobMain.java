@@ -7,11 +7,13 @@ public class jobMain {
 
 	ArrayList<job_Manage> memberList = new ArrayList<>();
 	ArrayList<employMent_Manage> employList = new ArrayList<>();
-	
+	jobMenu jMn = null;
+	job_Manage jM = null;
 
 	jobMain() {
 
 	}
+
 
 	public void menu() {
 		Scanner S = new Scanner(System.in);
@@ -39,28 +41,41 @@ public class jobMain {
 				System.out.println("다시 입력해주세요.");
 			}
 		}
-
 	}
 
 	private void memberAdd() {
 		Scanner S = new Scanner(System.in);
 		job_Manage memberTemp = new job_Manage();
+
 		System.out.println("회원등록을 선택하셨습니다. 회원의 ID를 입력해주세요.");
 		String mId = S.nextLine();
-		System.out.println("회원의 이름을 입력해주세요.");
-		String mName = S.nextLine();
-		System.out.println("회원의 나이를 입력해주세요.");
-		String mAge = S.nextLine();
-
 		boolean id = checkId(mId);
 		if (id == true) {
 			System.out.println("회원의 ID는 이미 사용중입니다. 다시 입력해주세요.");
+			return;
 		} else {
-			memberList.add(memberTemp);
 			memberTemp.mId = mId;
+			System.out.println("회원의 이름을 입력해주세요.");
+			String mName = S.nextLine();
 			memberTemp.mName = mName;
+			System.out.println("회원의 나이를 입력해주세요.");
+			String mAge = S.nextLine();
 			memberTemp.mAge = mAge;
+			memberList.add(memberTemp);
+			jMn.jobMenu();
 		}
+
+	}
+
+//		boolean id = checkId(mId);
+//		if (id == true) {
+//			System.out.println("회원의 ID는 이미 사용중입니다. 다시 입력해주세요.");
+//		} else {
+//			memberList.add(memberTemp);
+//			memberTemp.mId = mId;
+//			memberTemp.mName = mName;
+//			memberTemp.mAge = mAge;
+//		}
 
 //		for(int i=0;i<memberList.size();i++) {
 //			if(memberList.get(i).mId.equals(mName)) {
@@ -70,7 +85,6 @@ public class jobMain {
 //				}
 //			}
 //		}
-	}
 
 	private void memberDelete() {
 		Scanner S = new Scanner(System.in);
@@ -127,13 +141,12 @@ public class jobMain {
 					boolean name = checkName(mName);
 					if (name == true) {
 						System.out.println("변경되었습니다.");
-						memberTemp.mId=mId;
-						memberTemp.mName=mName;
+						memberTemp.mId = mId;
+						memberTemp.mName = mName;
 						memberList.remove(i);
 						employList.add(memberTemp);
 					}
 				}
-
 			}
 		} else if (a == 2) {
 			System.out.println("회원의 기본 정보를 수정하겠습니다. 회원의 기존ID를 입력해주세요.");
@@ -164,6 +177,15 @@ public class jobMain {
 		for (job_Manage memberTemp : memberList) {
 			memberTemp.view();
 		}
+
+	}
+	
+	public void jobList() {
+		ArrayList<jobMenu> ItMenu = new ArrayList<>();
+		ArrayList<jobMenu> FacMenu = new ArrayList<>();
+		ArrayList<jobMenu> ServiceMenu = new ArrayList<>();
+		ArrayList<jobMenu> businessMenu = new ArrayList<>();
+		ArrayList<jobMenu> PublicMenu = new ArrayList<>();
 	}
 
 	// 아이디 찾기

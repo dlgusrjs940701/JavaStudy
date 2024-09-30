@@ -23,8 +23,8 @@ public class T_center {
 				mod();
 			}else if(selNum==3) {
 				listAll();
-			}else if(selNum==4) {
-				break;
+			}else {
+				
 			}
 		}
 

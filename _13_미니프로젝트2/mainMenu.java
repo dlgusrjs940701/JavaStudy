@@ -30,7 +30,7 @@ public class mainMenu {
 			if (num == 1) {
 				word.menu();
 			} else if (num == 2) {
-				game.menu();
+//				game.menu();
 			} else if (num == 3) {
 				break; 
 			}

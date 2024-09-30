@@ -5,6 +5,7 @@ public class job_Manage {
 	String mId=null;
 	String mName=null;
 	String mAge=null;
+	jobMenu jMn=null;
 	
 	public void view() {
 		System.out.println("회원의 아이디 : "+mId);
