@@ -14,9 +14,4 @@ public class javaWord_game {
 	public javaWord_game() {
 		
 	}
-	
-//	public void menu() {
-//		int rGame=r.nextInt[word.wordList.size()];
-//		System.out.println("----- 영어단어 게임 -----");
-//	}
 }

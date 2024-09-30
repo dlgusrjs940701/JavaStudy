@@ -1,0 +1,12 @@
+접근제어자
+default(생략가능) : package내에서 접근가능 
+public : 전체
+private : class내에서 접근가능
+protected
+
+
+bic - binary( 2진수 ) 확장자 : .class
+src - source 확장자 : .java
+
+클래스 : 표현하고자 하는 대상 - 표현방법 ( 멤버변수, 메서드 )	
+				어떤 클래스를 정의할것인가
