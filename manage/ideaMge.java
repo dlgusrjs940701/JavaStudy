@@ -6,6 +6,10 @@ import java.util.Scanner;
 import dao.ideaDAO;
 import dto.ideaDTO;
 
+// 서비스를 제공하는 기능(요청 > 데이터베이스 작업 > 응답)
+// 역할 : 요청처리, CRUD작업 요청, 응답화면
+// ideaMge에서는 겍체를 만들지한고 공용변수로 주소를 가져온다.
+
 public class ideaMge {
 	ideaDAO idao = new ideaDAO();
 
@@ -65,7 +69,7 @@ public class ideaMge {
 		Scanner in = new Scanner(System.in);
 		System.out.println("수정할 아이디어의 번호를 입력하세요.");
 		String id = in.nextLine();
-		ideaDTO idto = idao.select(id);
+		ideaDTO idto = idao.selectOne(id);
 		if (idto != null) {
 			System.out.println("수정할 정보는 다음과 같습니다.");
 			System.out.println(idto.toString());
@@ -88,6 +92,7 @@ public class ideaMge {
 		Scanner in = new Scanner(System.in);
 		System.out.println("삭제 아이디 입력");
 		String delId = in.nextLine();
+		System.out.println("삭제되었습니다.");
 		idao.delete(delId);
 	}
 
@@ -103,6 +108,13 @@ public class ideaMge {
 	private void ideaSearch() { // 공사중
 		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
+		System.out.println("검색어를 입력");
+		String sw=in.nextLine();
+		ArrayList<ideaDTO> i = idao.select(sw);
+		System.out.println(i.size() + " 개의 아이디어가 있습니다.");
+		for (ideaDTO idto : i) {
+			System.out.println(idto.toString());
+		}
 	}
 
 }

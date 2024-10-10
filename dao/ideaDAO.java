@@ -75,7 +75,7 @@ public class ideaDAO {
 		return ilist;
 	}
 
-	public ideaDTO select(String selId) {
+	public ideaDTO selectOne(String selId) {
 		if (conn()) {
 			try {
 				String sql = "select * from ideastore where id = ?";
@@ -104,6 +104,29 @@ public class ideaDAO {
 		}
 		return null;
 	}
+	public ArrayList<ideaDTO> select(String sw){
+		ArrayList<ideaDTO> ilist = new ArrayList<ideaDTO>();
+		if(conn()) {
+			try {
+				String sql="select * from ideastore where "+
+						"name like '%"+sw+"%'";
+				System.out.println(sql);
+				PreparedStatement psmt = conn.prepareStatement(sql);
+				ResultSet rs =psmt.executeQuery();
+				//Resultset은 테이블 형식으로 가져온다고 이해합니다.
+				while(rs.next()) {  //next()메서드는 rs에서 참조하는 테이블에서
+					                // 튜플을 순차적으로 하나씩 접근하는 메서드
+					ideaDTO iTemp = new ideaDTO();
+					iTemp.setint(rs.getInt("id"));
+					iTemp.setName(rs.getString("name"));
+					iTemp.setMemo(rs.getString("memo"));
+					iTemp.setAuthor(rs.getString("author"));
+					ilist.add(iTemp);
+				}
+			} catch (SQLException e) {e.printStackTrace();}
+		}		
+		return ilist;
+	}	
 
 	public void add(ideaDTO idto) {
 		// TODO Auto-generated method stub
